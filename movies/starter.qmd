@@ -1,0 +1,37 @@
+---
+title: "shiny-starter"
+format: html
+editor: visual
+---
+
+```{r}
+# Load packages 
+library(tidyverse)
+library(ggplot2)
+```
+
+```{r}
+# Load in an R.data file
+
+load("data/movies.Rdata")
+```
+
+Explore the data below: 
+
+```{r}
+
+#add code here
+
+```
+
+Next, make a scatterplot to explore the relationship between `imdb_ratings` and `critics_score`
+
+```{r}
+
+#add code here
+
+```
+
+Now, what if we wanted to assess the relationship between `imdb_num_votes` and `imdb_ratings`? `imdb_ratings` and `critics_score`? Other variables? This is motivation to consider making a dynamic plot, and hosting it through shiny. 
+
+We will start by creating a dynamic scatter plot that can explore the relationships between: `imdb_rating, imdb_num_votes, critics_score, audience_score, runtime`. We will progressivly update our shiny app to answer more complex problems as we go. Let's start with `movies_01-starter.R`. 
