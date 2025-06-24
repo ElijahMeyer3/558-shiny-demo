@@ -16,7 +16,7 @@ library(ggplot2)
 load("data/movies.Rdata")
 ```
 
-Explore the data below: 
+Explore the data below:
 
 ```{r}
 
@@ -32,6 +32,6 @@ Next, make a scatterplot to explore the relationship between `imdb_ratings` and 
 
 ```
 
-Now, what if we wanted to assess the relationship between `imdb_num_votes` and `imdb_ratings`? `imdb_ratings` and `critics_score`? Other variables? This is motivation to consider making a dynamic plot, and hosting it through shiny. 
+Now, what if we wanted to assess the relationship between `imdb_num_votes` and `imdb_ratings`? `imdb_ratings` and `critics_score`? Other variables? This is motivation to consider making a dynamic plot, and hosting it through shiny.
 
-We will start by creating a dynamic scatter plot that can explore the relationships between: `imdb_rating, imdb_num_votes, critics_score, audience_score, runtime`. We will progressivly update our shiny app to answer more complex problems as we go. Let's start with `movies_01-starter.R`. 
+We will start by creating a dynamic scatter plot that can explore the relationships between: `imdb_rating, imdb_num_votes, critics_score, audience_score, runtime`. We will progressively update our shiny app to answer more complex problems as we go. Let's start with `movies_01-starter.R`.
