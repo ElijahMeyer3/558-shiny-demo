@@ -41,8 +41,8 @@ ui <- fluidPage(
 server <- function(input, output) {
 
   # Create scatterplot object the plotOutput function is expecting
-  output$name.of.output <- renderPlot({
-    ggplot(data = movies, aes_string(x = input$name.of.x.input, y = input$name.of.y.input)) +
+  output$name.of.output <- renderPlot({ #change code here
+    ggplot(data = movies, aes_string(x = input$name.of.x.input, y = input$name.of.y.input)) + #change code here
       geom_point()
   })
 }
